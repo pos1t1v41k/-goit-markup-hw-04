@@ -8,6 +8,8 @@
    --secondary-bg-color: #2F303A;
    --secondary-white-color: #F5F4FA;
    --card-gap: 30px;
+   --icon-color: rgba(175, 177, 184, 1);
+   --icon-bg-color: rgba(255, 255, 255, 0.1);
 }
 
 .body {
@@ -140,36 +142,50 @@ p {
 }
 
 /*контакты*/
-
 .contact-header {
    display: flex;
    margin-left: auto;
-   align-content: center;
+   align-items: center;
 }
 
-.contact {
-   font-family: 'Roboto';
-   font-style: normal;
+.contact-header .contact {
+
+   padding-top: 32px;
+   padding-bottom: 32px;
+   display: block;
    font-weight: 500;
    font-size: 14px;
-   line-height: 16px;
+   line-height: 1.2;
    letter-spacing: 0.02em;
    color: var(--primary-text-color);
    text-decoration: none;
    justify-self: flex-end;
 }
 
+
+.contact-item+.contact-item {
+   margin-left: 50px;
+}
+
+
+
+
+.header-contacts-icon {
+   margin-right: 10px;
+   fill: currentColor;
+
+}
+
+
 .contact:hover,
+.contact:focus .contact:hover,
 .contact:focus {
    color: var(--accent-color);
 }
 
-
-
 .contact-header .contact-item+.contact-item {
    margin-left: 50px;
 }
-
 
 
 /* block main */
@@ -368,6 +384,7 @@ p {
 
 }
 
+
 .title-our-command {
    margin-bottom: 50px;
    font-weight: 700;
@@ -397,13 +414,100 @@ p {
    color: var(--primary-text-color);
 }
 
+.comand-link-list {
+   display: flex;
+   justify-content: center;
+}
+
+
+
+.command-link {
+   display: flex;
+   color: var(--icon-color);
+   width: 44px;
+   height: 44px;
+   border-radius: 50%;
+   justify-content: center;
+   align-items: center;
+
+}
+
+.command-link:hover,
+.command-link:focus {
+   background-color: var(--accent-color);
+   color: var(--secondary-white-color);
+}
+
+.command-link+.command-link {
+   margin-left: 10px;
+}
+
+.icon-link {
+   fill: currentColor;
+   width: 20px;
+   height: 20px;
+}
+
+
+/*---clint logo---*/
+
+.clients {
+   padding-top: 94px;
+   padding-bottom: 94px;
+   text-align: center;
+}
+
+.title-clients {
+   margin-bottom: 50px;
+   font-size: 36px;
+   line-height: 42px;
+   text-align: center;
+   letter-spacing: 0.03em;
+   color: var(--title-text-color);
+}
+
+.clients-list {
+   display: flex;
+
+}
+
+.clients-list-item+.clients-list-item {
+   margin-left: 30px;
+}
+
+.client-link {
+   width: 170px;
+   height: 92px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 1px solid var(--icon-color);
+   border-radius: 4px;
+   color: var(--icon-color);
+}
+
+.client-link:hover,
+.client-link:focus {
+   color: var(--accent-color);
+   border-color: var(--accent-color);
+}
+
+.icon-client {
+   fill: currentColor
+}
+
+
+
 
 /* block footer */
 
 .footer {
    background-color: var(--secondary-bg-color);
-   padding: 60px 0px;
+   padding-top: 60px;
+   padding-bottom: 60px;
 }
+
+
 
 .footer-logo {
    font-family: 'Raleway', sans-serif;
@@ -457,6 +561,56 @@ p {
 
 .footer-link-item {
    margin-bottom: 9px;
+}
+
+/*----footer social link----*/
+
+.footer-column-list {
+   display: flex;
+}
+
+.footer-container {
+   display: flex;
+   align-items: baseline;
+}
+
+.footer-column+.footer-column {
+   margin-left: 70px;
+}
+
+.title-column {
+   font-size: 14px;
+   line-height: 16px;
+   letter-spacing: 0.03em;
+   text-transform: uppercase;
+   color: var(--primary-bg-color);
+   margin-bottom: 20px;
+}
+
+.column-link {
+   display: flex;
+   color: var(--primary-white-color);
+   width: 44px;
+   height: 44px;
+   border-radius: 50%;
+   justify-content: center;
+   align-items: center;
+   background-color: var(--icon-bg-color);
+}
+
+.column-link:hover,
+.column-link:focus {
+   background-color: var(--accent-color);
+}
+
+.column-item+.column-item {
+   margin-left: 10px;
+}
+
+.icon-link {
+   width: 20px;
+   height: 20px;
+   fill: currentColor;
 }
 
 
