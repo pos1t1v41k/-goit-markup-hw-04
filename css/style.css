@@ -291,6 +291,7 @@ p {
    background-repeat: no-repeat;
    background-position: center;
    background-color: rgba(245, 244, 250, 1);
+   margin-bottom: 30px;
 }
 
 .icon-antena::before {
@@ -412,6 +413,7 @@ p {
    text-align: center;
    letter-spacing: 0.03em;
    color: var(--primary-text-color);
+   margin-bottom: 16px;
 }
 
 .comand-link-list {
@@ -438,7 +440,9 @@ p {
    color: var(--secondary-white-color);
 }
 
-.command-link+.command-link {
+
+
+.comand-icon-item {
    margin-left: 10px;
 }
 
@@ -493,6 +497,8 @@ p {
 }
 
 .icon-client {
+   width: 106px;
+   height: 60px;
    fill: currentColor
 }
 
@@ -649,6 +655,7 @@ p {
 .button-service:focus {
    color: var(--primary-white-color);
    background-color: var(--accent-color);
+   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 
@@ -680,6 +687,7 @@ p {
    font-size: 16px;
    line-height: 1.85;
    letter-spacing: 0.03em;
+   color: var(--primary-text-color);
 }
 
 .card-content {
@@ -687,4 +695,14 @@ p {
    border-bottom: 1px solid #EEEEEE;
    border-left: 1px solid #EEEEEE;
    border-right: 1px solid #EEEEEE;
+}
+
+.card-item:hover,
+.card-item:focus {
+   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.card-set-link {
+   text-decoration: none;
+   display: block;
 }
